@@ -15,10 +15,10 @@ export const AuthenticationContextProvider = ({ children }) => {
     loginRequest(email, password)
       .then((u) => {
         setUser(u);
-        setIsLoading(false);
+        // setIsLoading(false);
       })
       .catch((e) => {
-        setIsLoading(false);
+        // setIsLoading(false);
         setError(e.toString());
       });
   };
@@ -52,12 +52,14 @@ export const AuthenticationContextProvider = ({ children }) => {
   };
 
   const onLogout = () => {
+    setIsLoading(true);
     firebase
     .auth()
     .signOut()
     .then(() => {
       setUser(null);
       setError(null);
+      setIsLoading(false);
     });
   };
 
