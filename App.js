@@ -7,6 +7,8 @@ LogBox.ignoreLogs(['AsyncStorage has been extracted from react-native core and w
 LogBox.ignoreLogs(['Expected style "top: 50" to contain units']); ///😢
 LogBox.ignoreLogs(['Stack Navigator']); ///😢
 LogBox.ignoreLogs(['Found screens with the same name nested inside one another.']); ///😢
+LogBox.ignoreLogs(['requestPermissionsAsync()" is now deprecated']); ///😢
+LogBox.ignoreLogs(['[Unhandled promise rejection: ReferenceError:  find variable: navigation]']); ///😢
 
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import React, { useState, useEffect } from "react";
