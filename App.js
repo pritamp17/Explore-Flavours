@@ -1,3 +1,13 @@
+// import "../ignoreWarnings";
+import {LogBox} from "react-native";
+LogBox.ignoreLogs([
+"exported from 'deprecated-react-native-prop-types'.",
+])   //// just to remove react-native-prop-types warning 😢
+LogBox.ignoreLogs(['AsyncStorage has been extracted from react-native core and will be removed in a future release.']); ///😢
+LogBox.ignoreLogs(['Expected style "top: 50" to contain units']); ///😢
+LogBox.ignoreLogs(['Stack Navigator']); ///😢
+LogBox.ignoreLogs(['Found screens with the same name nested inside one another.']); ///😢
+
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import React, { useState, useEffect } from "react";
 import * as firebase from "firebase";

@@ -5,7 +5,7 @@ import { Text } from "../../../components/typography/text.component";
 import LottieView from "lottie-react-native";
 
 export const AccountBackground = styled.ImageBackground.attrs({
-  source: require("../../../../assets/home_bg.jpg"),
+  source: require("../../../../assets/home_bg_1.jpg"),
 })`
   flex: 1;
   align-items: center;
