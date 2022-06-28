@@ -4,6 +4,12 @@ ReactNative
 
 
 merge this branch  with main while using google cloud api..
+```
+IMP ***
+
+Add cloup api key to firebase config  according to--
+https://firebase.google.com/docs/functions/config-env
+```
 
 
 add env.js in src/utils/env.js
