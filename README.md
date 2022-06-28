@@ -8,7 +8,7 @@ merge this branch  with main while using google cloud api..
 
 add env.js in src/utils/env.js
 
-`
+```
 import { Platform } from "react-native";
 const liveHost = "firebase deployed function url";
 const localHost = "http://192.168.167.118:5001/mealstogo-12f18/us-central1";
@@ -33,5 +33,4 @@ export const firebaseConfig = {                  ///// firebase project config
     appId: ""
   };
 
-
-`
+```
