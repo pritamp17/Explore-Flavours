@@ -4,11 +4,22 @@ ReactNative
 
 
 merge this branch  with main while using google cloud api..
+#enable this api's on your  google cloud account
+```
+geocoding - https://developers.google.com/maps/documentation/geocoding/overview
+Places API - https://developers.google.com/maps/documentation/places/web-service?hl=en 
+```
 ```
 IMP ***
-
 Add cloup api key to firebase config  according to--
-https://firebase.google.com/docs/functions/config-env
+cd/functions
+1.  firebase functions:config:set google.key="API key"
+2.  now check if value is updated or not "firebase functions:config:get"
+3. now run
+  "firebase functions:config:get > .runtimeconfig.json"
+ 4. firebase functions:config:get > .runtimeconfig.json
+    this will create .runtimeconfig file in /functions , Now add this file in git ignoe
+  
 ```
 
 
