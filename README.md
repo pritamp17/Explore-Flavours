@@ -12,7 +12,7 @@ https://firebase.google.com/docs/functions/config-env
 ```
 
 
-add env.js in src/utils/env.js
+add env.js in src/utils/env.js    ** imp
 
 ```
 import { Platform } from "react-native";
