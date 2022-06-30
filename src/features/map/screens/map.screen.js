@@ -14,7 +14,7 @@ const Map = styled(MapView)`
 `;
 
 
-export const MapScreen = ({ navigation }) => {
+const RestaurantMap = ({ navigation }) => {
   const { location } = useContext(LocationContext);
   const { restaurants = [] } = useContext(RestaurantsContext);
 
@@ -65,4 +65,20 @@ export const MapScreen = ({ navigation }) => {
       </Map>
     </>
   );
+};
+
+
+export const MapScreen = ({ navigation }) => {    ///this , for devlopement when places apart from mock data is searches   
+  const { location } = useContext(LocationContext);
+  if (!location) {
+    return (
+      <Map
+        region={{
+          latitude: 0,
+          longitude: 0,
+        }}
+      />
+    );
+  }
+  return <RestaurantMap navigation={navigation} />;
 };

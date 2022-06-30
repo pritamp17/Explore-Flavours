@@ -11,6 +11,13 @@ LogBox.ignoreLogs(['requestPermissionsAsync()" is now deprecated']); ///😢
 LogBox.ignoreLogs(['[Unhandled promise rejection: ReferenceError:  find variable: navigation]']); ///😢
 LogBox.ignoreLogs(['There was problem sending log messages to your developement enviroment ']); ///😢
 LogBox.ignoreLogs([' Cant perform a React state update on an unmounted component.']); ///😢
+LogBox.ignoreLogs(['Warning: componentWillReceiveProps has been renamed, and is not recommended for use.']); ///😢
+LogBox.ignoreLogs([' Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.%s, ']); ///😢
+LogBox.ignoreLogs(['Possible Unhandled Promise Rejection']); ///😢
+LogBox.ignoreLogs(['Possible Unhandled Promise Rejection']); ///😢
+LogBox.ignoreLogs(['Each child in a list should have a unique']); ///😢
+/// removing errors temporarily
+
 
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import React, { useState, useEffect } from "react";
