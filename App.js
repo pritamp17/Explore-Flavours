@@ -25,12 +25,7 @@ import { Navigation } from "./src/infrastructure/navigation";
 import { AuthenticationContextProvider } from "./src/services/authentication/authentication.context";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD9bIPwQSQbRbhGz2Q8DLLnw88ikCQt4eQ",
-  authDomain: "mealstogo-12f18.firebaseapp.com",
-  projectId: "mealstogo-12f18",
-  storageBucket: "mealstogo-12f18.appspot.com",
-  messagingSenderId: "231030640458",
-  appId: "1:231030640458:web:c7ae69d6c51aa97eef7bb3"
+ 
 };
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
